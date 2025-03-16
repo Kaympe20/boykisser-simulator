@@ -25,7 +25,7 @@ upgradesData.forEach((upgrade, index) => {
     const div = document.createElement('div');
     div.className = 'upgrade';
     div.innerHTML = `
-    <img src="https://i.imgur.com/${['TRvPcpc','MIiWCue','o00wovo','a2qBqw4','ImDjhvc','incdlsW','TLYMsVY','H6PFlvS','q10Nba7','oSa78Nq','g31vRo4'][index]}.png" alt="upgrade">
+    <img src="https://i.imgur.com/${['TRvPcpc','MIiWCue','o00wovo','a2qBqw4','ImDjhvc','incdlsW','TLYMsVY','g31vRo4','H6PFlvS','q10Nba7','oSa78Nq'][index]}.png" alt="upgrade">
     <div class="upgrade-info">
         <div class="upgrade-name">${upgrade.name}</div>
         <div class="upgrade-desc">${upgrade.desc} (Cost: <span id="cost-${index}">${upgrade.currentCost}</span>)</div>
