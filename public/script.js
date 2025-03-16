@@ -53,8 +53,41 @@ resetButton.addEventListener('click', () => {
     updateDisplay();
 });
 
+function setCookie(name, value, days) {
+    const date = new Date();
+    date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+    const expires = "expires=" + date.toUTCString();
+    document.cookie = name + "=" + value + ";" + expires + ";path=/";
+}
+
+function getCookie(name) {
+    const cname = name + "=";
+    const decodedCookie = decodeURIComponent(document.cookie);
+    const ca = decodedCookie.split(';');
+    for (let i = 0; i < ca.length; i++) {
+        let c = ca[i];
+        while (c.charAt(0) == ' ') {
+            c = c.substring(1);
+        }
+        if (c.indexOf(cname) == 0) {
+            return c.substring(cname.length, c.length);
+        }
+    }
+    return "";
+}
+
+// Load the score from the cookie when the page is loaded
+window.onload = () => {
+    const savedCount = getCookie("count");
+    if (savedCount) {
+        count = parseInt(savedCount);
+        updateDisplay();
+    }
+};
+
 function updateDisplay() {
     countDisplay.textContent = `Clicks: ${count}`;
+    setCookie("count", count, 365);
 }
 
 function buyUpgrade(index) {
