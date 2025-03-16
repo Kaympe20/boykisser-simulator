@@ -12,9 +12,10 @@ const upgradesData = [
     { name: 'Mega Tap', desc: '+10 clicks per click', baseCost: 1000, effect: () => clickValue += 10 },
     { name: 'Fast Clicker', desc: 'Auto-clicks every 1s', baseCost: 2000, effect: () => startAutoClick(1000, 1) },
     { name: 'Triple Power', desc: 'Triple click power', baseCost: 5000, effect: () => clickValue *= 3 },
+    { name: 'Get a real message from a real femboy', desc: 'Donate at least $5 (this will be split among the creators of the project)', baseCost: 100000, effect: () => window.open('https://account.venmo.com/u/jacobjoubert', "_blank") },
     { name: 'Massive Tap', desc: '+50 clicks per click', baseCost: 10000, effect: () => clickValue += 50 },
     { name: 'Rapid Clicker', desc: 'Auto-clicks twice per second', baseCost: 25000, effect: () => startAutoClick(500, 2) },
-    { name: 'Quad Power', desc: 'Quadruple click power', baseCost: 50000, effect: () => clickValue *= 4 }
+    { name: 'Quad Power', desc: 'Quadruple click power', baseCost: 50000, effect: () => clickValue *= 4 },
 ];
 
 const upgradesElement = document.getElementById('upgrades');
@@ -24,7 +25,7 @@ upgradesData.forEach((upgrade, index) => {
     const div = document.createElement('div');
     div.className = 'upgrade';
     div.innerHTML = `
-    <img src="https://i.imgur.com/${['TRvPcpc','MIiWCue','o00wovo','a2qBqw4','ImDjhvc','incdlsW','TLYMsVY','H6PFlvS','q10Nba7','oSa78Nq'][index]}.png" alt="upgrade">
+    <img src="https://i.imgur.com/${['TRvPcpc','MIiWCue','o00wovo','a2qBqw4','ImDjhvc','incdlsW','TLYMsVY','H6PFlvS','q10Nba7','oSa78Nq','g31vRo4'][index]}.png" alt="upgrade">
     <div class="upgrade-info">
         <div class="upgrade-name">${upgrade.name}</div>
         <div class="upgrade-desc">${upgrade.desc} (Cost: <span id="cost-${index}">${upgrade.currentCost}</span>)</div>
