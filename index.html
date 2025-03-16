@@ -37,7 +37,7 @@
     <div class="upgrades" id="upgrades"></div>
 
     <div class="player">
-      <h1>Music Player</h1>
+      <h1>Music & Stuff</h1>
       <audio id="audio" controls>
         <source
           id="audioSource"
@@ -46,12 +46,6 @@
         />
         Your browser does not support the audio element.
       </audio>
-      <div class="controls">
-        <button onclick="playAudio()">Play</button>
-        <button onclick="pauseAudio()">Pause</button>
-        <button onclick="unpauseAudio()">Unpause</button>
-        <button onclick="toggleSongList()">Songs</button>
-      </div>
       <div class="song-list" id="songList">
         <button onclick="changeSong('https://files.catbox.moe/x2qijw.mp3')">
           Rito Village
@@ -74,11 +68,6 @@
         <button onclick="changeSong('https://files.catbox.moe/7aujva.mp3')">
           Loonboon
         </button>
-      </div>
-      <div class="add-song">
-        <input type="text" id="songName" placeholder="Song Name" />
-        <input type="text" id="songUrl" placeholder="Song URL" />
-        <button onclick="addSong()">Add Song</button>
       </div>
     </div>
 
