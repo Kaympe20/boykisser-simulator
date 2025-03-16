@@ -5,17 +5,17 @@ const cookie = document.getElementById('cookie');
 const resetButton = document.getElementById('reset');
 
 const upgradesData = [
-    { name: 'Small Boost', desc: '+1 click per click', baseCost: 10, effect: () => clickValue += 1 },
-    { name: 'Power Tap', desc: '+5 clicks per click', baseCost: 50, effect: () => clickValue += 5 },
-    { name: 'Auto-Clicker', desc: 'Auto-clicks every 2s', baseCost: 250, effect: () => startAutoClick(2000, 1) },
-    { name: 'Double Up', desc: 'Double click power', baseCost: 500, effect: () => clickValue *= 2 },
-    { name: 'Mega Tap', desc: '+10 clicks per click', baseCost: 1000, effect: () => clickValue += 10 },
-    { name: 'Fast Clicker', desc: 'Auto-clicks every 1s', baseCost: 2000, effect: () => startAutoClick(1000, 1) },
-    { name: 'Triple Power', desc: 'Triple click power', baseCost: 5000, effect: () => clickValue *= 3 },
+    { name: 'small femboy', desc: '+1 click per click', baseCost: 10, effect: () => clickValue += 1 },
+    { name: 'big femboy', desc: '+5 clicks per click', baseCost: 50, effect: () => clickValue += 5 },
+    { name: 'Peasant femboy', desc: 'Auto-clicks every 2s', baseCost: 250, effect: () => startAutoClick(2000, 1) },
+    { name: 'Double femboys', desc: 'Double click power', baseCost: 500, effect: () => clickValue *= 2 },
+    { name: '10 femboys', desc: '+10 clicks per click', baseCost: 1000, effect: () => clickValue += 10 },
+    { name: 'Fast femboy', desc: 'Auto-clicks every 1s', baseCost: 2000, effect: () => startAutoClick(1000, 1) },
+    { name: 'Triple femboys', desc: 'Triple click power', baseCost: 5000, effect: () => clickValue *= 3 },
     { name: 'Get a real message from a real femboy', desc: 'Donate at least $5 (this will be split among the creators of the project)', baseCost: 100000, effect: () => window.open('https://account.venmo.com/u/jacobjoubert', "_blank") },
-    { name: 'Massive Tap', desc: '+50 clicks per click', baseCost: 10000, effect: () => clickValue += 50 },
-    { name: 'Rapid Clicker', desc: 'Auto-clicks twice per second', baseCost: 25000, effect: () => startAutoClick(500, 2) },
-    { name: 'Quad Power', desc: 'Quadruple click power', baseCost: 50000, effect: () => clickValue *= 4 },
+    { name: 'Massive femboy', desc: '+50 clicks per click', baseCost: 10000, effect: () => clickValue += 50 },
+    { name: 'fast peasant femboy', desc: 'Auto-clicks twice per second', baseCost: 25000, effect: () => startAutoClick(500, 2) },
+    { name: 'group of femboys', desc: 'Quadruple click power', baseCost: 50000, effect: () => clickValue *= 4 },
 ];
 
 const upgradesElement = document.getElementById('upgrades');
