@@ -1,0 +1,191 @@
+body {
+font-family: 'Orbitron', sans-serif;
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+justify-content: center;
+min-height: 100vh;
+background: url('https://i.imgur.com/NL8oQVJ.png') no-repeat center center fixed;
+background-size: cover;
+margin: 0;
+gap: 50px;
+padding: 20px;
+color: #fff;
+}
+
+.game {
+display: flex;
+flex-direction: column;
+align-items: center;
+background: rgba(0, 0, 0, 0.5);
+padding: 20px;
+border-radius: 10px;
+}
+
+h1 {
+font-size: 2.5rem;
+margin-bottom: 10px;
+display: flex;
+align-items: center;
+gap: 10px;
+}
+
+h1 img {
+width: 30px;
+height: 30px;
+}
+
+#count {
+font-size: 1.8rem;
+margin: 15px 0;
+}
+
+#cookie {
+width: 200px;
+height: 200px;
+object-fit: cover;
+border-radius: 50%;
+box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+cursor: pointer;
+transition: transform 0.1s ease;
+}
+
+#cookie:active {
+transform: scale(0.92);
+}
+
+button {
+margin-top: 20px;
+padding: 10px 20px;
+font-size: 1rem;
+background-color: #ff9f43;
+border: none;
+border-radius: 5px;
+color: #fff;
+cursor: pointer;
+transition: background 0.2s;
+}
+
+button {
+background-color: #ff7f0e;
+}
+
+.upgrades {
+display: flex;
+flex-direction: column;
+gap: 20px;
+background: rgba(0, 0, 0, 0.5);
+padding: 15px;
+border-radius: 10px;
+width: 400px;
+}
+
+.upgrade {
+display: flex;
+align-items: center;
+gap: 10px;
+cursor: pointer;
+transition: transform 0.2s;
+padding: 5px;
+border: 1px solid #ddd;
+border-radius: 5px;
+background: #333;
+}
+
+.upgrade:hover {
+transform: scale(1.03);
+}
+
+.upgrade img {
+width: 60px;
+height: 60px;
+object-fit: cover;
+border-radius: 5px;
+}
+
+.upgrade-info {
+display: flex;
+flex-direction: column;
+}
+
+.upgrade-name {
+font-weight: bold;
+}
+
+.upgrade-desc {
+font-size: 0.8rem;
+color: #ccc;
+}
+
+.player {
+background: rgba(0, 0, 0, 0.8);
+color: #fff;
+padding: 10px;
+border-radius: 10px;
+text-align: center;
+margin-top: 20px;
+width: 300px;
+}
+.controls {
+margin-top: 10px;
+display: flex;
+justify-content: center;
+gap: 10px;
+}
+.controls button {
+padding: 5px 10px;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+background-color: #444;
+color: #fff;
+transition: background 0.2s;
+}
+.controls button:hover {
+background-color: #555;
+}
+.song-list {
+margin-top: 10px;
+display: none;
+flex-direction: column;
+align-items: center;
+}
+.song-list button {
+margin: 5px 0;
+padding: 5px 10px;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+background-color: #444;
+color: #fff;
+transition: background 0.2s;
+}
+.song-list button:hover {
+background-color: #555;
+}
+.add-song {
+margin-top: 10px;
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+.add-song input {
+padding: 5px;
+margin-bottom: 10px;
+border-radius: 5px;
+border: 1px solid #ddd;
+background-color: #444;
+color: #fff;
+}
+.add-song button {
+padding: 5px 10px;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+background-color: #444;
+color: #fff;
+transition: background 0.2s;
+}
+.add-song button:hover {
+background-color: #555;
+}
