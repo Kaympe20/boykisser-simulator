@@ -14,7 +14,8 @@ const upgradesData = [
     { name: 'Triple Power', desc: 'Triple click power', baseCost: 5000, effect: () => clickValue *= 3 },
     { name: 'Massive Tap', desc: '+50 clicks per click', baseCost: 10000, effect: () => clickValue += 50 },
     { name: 'Rapid Clicker', desc: 'Auto-clicks twice per second', baseCost: 25000, effect: () => startAutoClick(500, 2) },
-    { name: 'Quad Power', desc: 'Quadruple click power', baseCost: 50000, effect: () => clickValue *= 4 }
+    { name: 'Quad Power', desc: 'Quadruple click power', baseCost: 50000, effect: () => clickValue *= 4 },
+    { name: 'Get a real message from a real femboy', desc: 'Click to get a real message from a real femboy', baseCost: 100000, effect: () => window.open("https://www.example.com", "_blank"); }
 ];
 
 const upgradesElement = document.getElementById('upgrades');
