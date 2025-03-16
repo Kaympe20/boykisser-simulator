@@ -83,46 +83,9 @@ function startAutoClick(interval, amount) {
 const audio = document.getElementById('audio');
 const songList = document.getElementById('songList');
 
-function playAudio() {
-    audio.play();
-}
-
-function pauseAudio() {
-    audio.pause();
-}
-
-function unpauseAudio() {
-    if (audio.paused) {
-    audio.play();
-    }
-}
-
-function toggleSongList() {
-    if (songList.style.display === 'none') {
-    songList.style.display = 'flex';
-    } else {
-    songList.style.display = 'none';
-    }
-}
-
 function changeSong(src) {
     const audioSource = document.getElementById('audioSource');
     audioSource.src = src;
     audio.load();
     audio.play();
-}
-
-function addSong() {
-    const songName = document.getElementById('songName').value;
-    const songUrl = document.getElementById('songUrl').value;
-    if (songName && songUrl) {
-    const button = document.createElement('button');
-    button.textContent = songName;
-    button.onclick = () => changeSong(songUrl);
-    songList.appendChild(button);
-    document.getElementById('songName').value = '';
-    document.getElementById('songUrl').value = '';
-    } else {
-    alert('Please enter both song name and URL');
-    }
 }
