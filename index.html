@@ -1,62 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Femboy Clicker | My Website</title>
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Femboy Clicker | My Website</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="module" href="style.css" />
 
-  <!-- Site Preview Tags -->
-  <meta property="og:title" content="Boykisser Simulator">
-  <meta property="og:description" content="You like kissing boys, don't you?">
-  <meta property="og:image" content="https://i.imgur.com/a3RTTif.png">
-  <meta property="og:url" content="https://boykisser.owo.bet">
-  <meta property="og:type" content="website">
-</head>
-<body>
-
-  <div class="game">
-    <h1><img src="https://i.imgur.com/a3RTTif.png" alt="icon"> Femboy Clicker <img src="https://i.imgur.com/a3RTTif.png" alt="icon"></h1>
-    <div id="count">Clicks: 0</div>
-    <img id="cookie" src="https://i.imgur.com/UeMfMKC.png" alt="femboy">
-    <button id="reset">Reset</button>
-    <a href="https://account.venmo.com/u/jacobjoubert" target="_blank">
-      <button>Donate >$5 to get a message from a real femboy</button>
-    </a>
-  </div>
-
-  <div class="upgrades" id="upgrades"></div>
-
-  <div class="player">
-    <h1>Music Player</h1>
-    <audio id="audio" controls>
-      <source id="audioSource" src="https://files.catbox.moe/x2qijw.mp3" type="audio/mp3">
-      Your browser does not support the audio element.
-    </audio>
-    <div class="controls">
-      <button onclick="playAudio()">Play</button>
-      <button onclick="pauseAudio()">Pause</button>
-      <button onclick="unpauseAudio()">Unpause</button>
-      <button onclick="toggleSongList()">Songs</button>
+    <!-- Site Preview Tags -->
+    <meta property="og:title" content="Boykisser Simulator" />
+    <meta
+      property="og:description"
+      content="You like kissing boys, don't you?"
+    />
+    <meta property="og:image" content="https://i.imgur.com/a3RTTif.png" />
+    <meta property="og:url" content="https://boykisser.owo.bet" />
+    <meta property="og:type" content="website" />
+  </head>
+  <body>
+    <div class="game">
+      <h1>
+        <img src="https://i.imgur.com/a3RTTif.png" alt="icon" /> Femboy Clicker
+        <img src="https://i.imgur.com/a3RTTif.png" alt="icon" />
+      </h1>
+      <div id="count">Clicks: 0</div>
+      <img id="cookie" src="https://i.imgur.com/UeMfMKC.png" alt="femboy" />
+      <button id="reset">Reset</button>
+      <a href="https://account.venmo.com/u/jacobjoubert" target="_blank">
+        <button>Donate >$5 to get a message from a real femboy</button>
+      </a>
     </div>
-    <div class="song-list" id="songList">
-      <button onclick="changeSong('https://files.catbox.moe/x2qijw.mp3')">Rito Village</button>
-      <button onclick="changeSong('https://files.catbox.moe/nhuv99.mp3')">Divine Beast, Vah Medoh</button>
-      <button onclick="changeSong('https://files.catbox.moe/xf3lq3.mp3')">Great Fairy Fountain</button>
-      <button onclick="changeSong('https://files.catbox.moe/n75m7m.mp3')">Escape</button>
-      <button onclick="changeSong('https://files.catbox.moe/5meiei.mp3')">Phantom</button>
-      <button onclick="changeSong('https://files.catbox.moe/zap9g0.mp3')">Wake Up, Get Up, Get Out There</button>
-      <button onclick="changeSong('https://files.catbox.moe/7aujva.mp3')">Loonboon</button>
-    </div>
-    <div class="add-song">
-      <input type="text" id="songName" placeholder="Song Name">
-      <input type="text" id="songUrl" placeholder="Song URL">
-      <button onclick="addSong()">Add Song</button>
-    </div>
-  </div>
 
-  <script src="script.js"></script>
+    <div class="upgrades" id="upgrades"></div>
 
-</body>
+    <div class="player">
+      <h1>Music Player</h1>
+      <audio id="audio" controls>
+        <source
+          id="audioSource"
+          src="https://files.catbox.moe/x2qijw.mp3"
+          type="audio/mp3"
+        />
+        Your browser does not support the audio element.
+      </audio>
+      <div class="controls">
+        <button onclick="playAudio()">Play</button>
+        <button onclick="pauseAudio()">Pause</button>
+        <button onclick="unpauseAudio()">Unpause</button>
+        <button onclick="toggleSongList()">Songs</button>
+      </div>
+      <div class="song-list" id="songList">
+        <button onclick="changeSong('https://files.catbox.moe/x2qijw.mp3')">
+          Rito Village
+        </button>
+        <button onclick="changeSong('https://files.catbox.moe/nhuv99.mp3')">
+          Divine Beast, Vah Medoh
+        </button>
+        <button onclick="changeSong('https://files.catbox.moe/xf3lq3.mp3')">
+          Great Fairy Fountain
+        </button>
+        <button onclick="changeSong('https://files.catbox.moe/n75m7m.mp3')">
+          Escape
+        </button>
+        <button onclick="changeSong('https://files.catbox.moe/5meiei.mp3')">
+          Phantom
+        </button>
+        <button onclick="changeSong('https://files.catbox.moe/zap9g0.mp3')">
+          Wake Up, Get Up, Get Out There
+        </button>
+        <button onclick="changeSong('https://files.catbox.moe/7aujva.mp3')">
+          Loonboon
+        </button>
+      </div>
+      <div class="add-song">
+        <input type="text" id="songName" placeholder="Song Name" />
+        <input type="text" id="songUrl" placeholder="Song URL" />
+        <button onclick="addSong()">Add Song</button>
+      </div>
+    </div>
+
+    <script type="module" src="script.js"></script>
+  </body>
 </html>
